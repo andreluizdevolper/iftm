@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Formulário</title>
+    <meta name="author" content="André Luiz">
+</head>
+<body>
+    <form>
+        <label for="name">Nome </label><br>
+        <input type="text" name="nome" placeholder="Digite seu nome aqui"> <br>
+
+        <p>Sexo:</p>
+        <input type="radio" id="masculino" name="sexo" value="Masculino">
+        <label for="sexo"> Masculino </label>
+        <input type="radio" id="feminino" name="sexo" value="Feminino">
+        <label for="sexo"> Feminino </label> <br><br> 
+    
+        <label for="estado_civil"> Estado Civil:</label><br>
+        <select id="estado_civil" name="estado_civil">
+            <option value="" disabled selected hidden> Escolha uma opção</option>
+            <option value="casado"> Casado</option>
+            <option value="solteiro">Solteiro</option> 
+            <option value="viúvo">Viúvo</option>  
+            <option value="divorciado">Divorciado</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+        <label for="gmail" >Email:</label><br>
+        <input type="email" id="gmail" name="gmail" placeholder="Digite seu email aqui"><br><br>
+        <label for="site">Sua pagina web:</label><br>
+        <input type="url" name="site" placeholder="Site"><br><br>
+        <label for="telefone"> Numero Celular: </label><br>
+        <input type="tel" name="telefone" placeholder="(34) 99999-9999"><br><br>
+        <label for="endereço">Endereço</label><br>
+        <input type="text" name="endereço" placeholder="Endereço residencial" ><br><br>
+        <label for="numero">Número</label><br>
+        <input type="number" max="9999" min="1" ><br><br>
+        <label for="data_nascimento">Data de Nascimento</label><br>
+        <input type="date" name="data" ><br><br>
+        <button type="submit" > Cadastrar</button>
+        <button type="reset" > Limpar</button>
+        
+    </form>
+</body>
+</html>
