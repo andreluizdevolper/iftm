@@ -1,0 +1,101 @@
+.oswald body {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+}
+
+.face {
+    border:1px solid black;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-image: url('img/faceBlack.png');
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    padding-top: 50px;
+    color: white;
+}
+
+.face:hover {
+    background-image: url('img/face.png');
+    color: rgb(59, 89, 152)
+}
+
+.insta{
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-image: url('img/instaBlack.png');
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    padding-top: 50px;
+    color: white;
+}
+
+.insta:hover {
+    background-image: url('img/insta.png');
+    color: rgb(196, 51, 96);
+}
+.maps{
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-image: url('img/mapsBlack.png');
+    background-repeat: no-repeat;
+    background-position: center 10px ;
+    padding-top: 50px;
+    color: white;
+}
+
+.maps:hover{
+    background-image: url('img/maps.png');
+    color:green
+}
+
+.twitter{
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-image: url('img/twitterBlack.png');
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    padding-top: 50px;
+    color: white;
+}
+
+.twitter:hover{
+    background-image: url('img/twitter.png');
+    color:yellow
+}
+
+.youtube{
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-image: url('img/youtubeBlack.png');
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    padding-top: 50px;   
+    color: white;
+}
+
+
+
+.youtube:hover{
+    background-image: url('img/youtube.png');
+    color:red;
+}
+
+.menu{
+    background-color: black;
+    text-align: center;
+    width: 100%;
+}
+.menu table{
+    margin: 0 auto;
+}
