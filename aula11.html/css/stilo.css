@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box a{ 
+    height: 150px;
+    padding: 10px;
+    width: 150px;
+    position: fixed;
+    bottom:0px;
+    right: 0px;
+    background-image: url('ChatGPT_Image_11_de_mai._de_2026__20_06_54-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100px;
+    display: block;
+    
+}
