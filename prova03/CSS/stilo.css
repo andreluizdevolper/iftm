@@ -1,0 +1,142 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+a {
+    color: black;
+}
+main {
+    color: white;
+    background-color: black;
+}
+nav ul {
+    background-color: rgb(255, 255, 255);
+    justify-content: right;
+    display: flex;
+    text-align: center;
+    list-style: none;
+    height: 39px;
+    color: black;
+}
+nav ul li a {
+    padding: 20px;
+    text-decoration: none;
+    padding-top: 10px;
+    height: 10px;
+    width: 50px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+    height: 80px;
+    
+}
+.primeira{
+    background-color: black;
+    color: white;
+}
+.centro{
+    border: 1px solid black;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.img{
+    width: 600px;
+    height: 350px;
+}
+.pad{
+    padding: 15px;
+}
+.segunda{
+    background-color: white;
+    color: black;
+}
+.container h3{
+    color: red;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    padding: 60px;
+    width: 70%;
+  
+    margin: auto;
+    text-align: justify;
+    
+}
+.terceiro{
+    background-color: black;
+    color: white;
+    margin: auto;
+    width: 70%;
+    text-align: justify;
+    padding: 20px;
+    font-size: 15px;
+}
+.terceiro h2{
+    text-align: center;
+}
+.quarto{
+    background-color: white;
+    color: black;
+}
+.fotos{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 70%;
+}
+.foto1{
+    justify-content: center;
+   
+    justify-items: center;
+    direction: center 10 ;
+    background-position: center center;
+    padding-left: 15px;
+    
+
+}
+.foto02{
+    justify-content: center;
+  
+    justify-items: center;
+    direction: center 10 ;
+    background-position: center center;
+    padding-right: 25px;
+    margin-left: 30px;
+
+}
+.um{
+    height: 150px;
+}
+.dois{
+    height: 150px;
+}
+.botao {
+    background-color: rgb(69, 70, 234);
+    padding: 8px;
+    border-bottom: 10px;
+    color: white;
+    font-size: 10px;
+    justify-content: center;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+}
+footer p{
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
