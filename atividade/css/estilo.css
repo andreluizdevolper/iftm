@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.conteiner > div>div{
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 13px;
+    margin: 0 ;
+    position: relative;
+    padding: 5px;
+}
+.conteiner > div{
+    gap: 20px;
+    border-radius: 3%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+h3{
+    color: red;
+}
+P{
+    color: black;
+}
+img{
+    position: absolute;
+    top:5px;
+    width: 100px;
+    height: 80px;
+    left: 120px;
+
+}
+
+
+@media screen and (min-width: 768px){
+  .conteiner{
+     width: 1200px;
+     margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+  }
+}
