@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    padding-bottom: 25px  ;
+}
+.cont{
+
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    background-color: rgb(156, 156, 214);
+    
+    
+}
+div ul {
+    list-style: none;
+    text-decoration: none;
+}
+div ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.titulo{
+    margin: auto;
+    width: 50%;
+    color: rgb(142, 111, 65);
+    background-color: rgb(77, 77, 144);
+    padding-top: 15px;
+}
