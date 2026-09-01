@@ -1,0 +1,266 @@
+/* =========================
+   MOBILE (até 380px)
+========================= */
+@media (max-width: 380px) {
+
+.texto-sobre h2{
+  font-size: 20px;
+}
+.texto-sobre p{
+  font-size: 11px;
+}
+}
+
+/* =========================
+   MOBILE (até 768px)
+========================= */
+@media (max-width: 768px) {
+  /* HEADER */
+  .header {
+    padding: 15px 20px;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 30%;
+    border-radius: 0px 0px 0px 20px;
+
+    background-color: rgba(74, 83, 64, 0);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    transition: all 0.4s ease;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0 ease;
+    z-index: 999;
+  }
+
+  .menu.ativo {
+    max-height: 300px;
+    padding: 20px 0;
+    background-color: rgba(74, 83, 64, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+  }
+
+  .close-menu {
+    position: absolute;
+    display: none;
+    top: 2px;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .menu.ativo .close-menu {
+    display: block;
+    margin-right: 10px;
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 22px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .btn-header {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .nome {
+    font-size: 18px;
+  }
+
+  .profissao {
+    font-size: 14px;
+  }
+
+  .painelPrincipal {
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(162, 135, 92, 0.65),
+        rgba(205, 183, 158, 0.85)
+      ),
+      url("../img/principal.jpg");
+
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .conteudo {
+    /* margin: 0; */
+    max-width: 100%;
+  }
+
+  /* HERO SOBRE */
+.sobre-hero {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(162, 135, 92, 0.65),
+      rgba(205, 183, 158, 0.85)
+    ),
+    url("../img/settons.png");
+
+  background-size: cover; /* 🔥 ESSENCIAL */
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  justify-content: center;
+  text-align: center;
+}
+.texto-sobre{
+  padding-top: 50px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+}
+  /* CARDS */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* SEÇÕES COM IMAGEM + TEXTO */
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .invertida .container {
+  flex-direction: column;
+}
+
+  .imagem {
+    width: 100%;
+  }
+
+  .imagem img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .texto {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-col {
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* =========================
+   TABLET (até 1024px)
+========================= */
+@media (max-width: 1024px) {
+  /* MENU */
+  .menu {
+    gap: 40px;
+  }
+
+  .painelPrincipal {
+    /* margin-top: 80px; */
+    min-height: 100vh;
+    padding: 120px 20px 60px;
+        background-image:
+      linear-gradient(
+        to bottom,
+        rgba(162, 135, 92, 0.65),
+        rgba(205, 183, 158, 0.85)
+      ),
+      url("../img/principal.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* TEXTO */
+  .conteudo {
+    width: 100%;
+    max-width: 500px;
+    /* margin-left: 10%; */
+    color: rgba(255, 255, 255, 0.7411764705882353);
+  }
+
+  .conteudo h1 {
+    font-size: 200%;
+    margin-bottom: 15px;
+  }
+
+  .conteudo p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  /* HERO SOBRE */
+
+
+  /* CARDS */
+  .cards {
+    gap: 40px;
+  }
+}
+
+/* =========================
+   TELAS media (1300px)
+========================= */
+@media (max-width: 1300px) {
+  .menu {
+    gap: 20px;
+  }
+
+
+
+  /* CARDS */
+  .cards {
+    gap: 40px;
+  }
+
+  /* .texto-sobre{
+  
+} */
+}
+
+/* =========================
+   TELAS GRANDES (opcional)
+========================= */
+/* @media (min-width: 1600px) {
+  .texto-sobre {
+    width: 30%;
+  }
+
+  .texto-sobre h2 {
+    font-size: 38px;
+  }
+
+  .texto-sobre p {
+    font-size: 18px;
+  }
+} */

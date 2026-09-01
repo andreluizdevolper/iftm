@@ -1,0 +1,78 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 80px; */
+}
+
+/* HERO SOBRE (AGORA NA SEÇÃO DE BAIXO) */
+.sobre-hero {
+  flex: 1;
+  margin-top: 0;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 1px -5px 9px -3px rgba(6, 6, 38, .6);
+
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(162, 135, 92, 1) 35%,
+      rgba(205, 183, 158, 0.95) 60%,
+      rgba(240, 233, 215, 0) 85%
+    ),
+    url("../img/settons.png");
+
+  background-size: contain; 
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+/* CONTAINER MAIS ORGANIZADO */
+.sobre-hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px; 
+}
+
+/* TEXTO */
+.texto-sobre {
+  width: 100%;
+  max-width: 500px; 
+  color: #4c5544;
+}
+
+.texto-sobre h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.texto-sobre p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.footer {
+  border-radius: 2px 2px 0px 0px;
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: 1px -5px 9px -3px rgba(6, 6, 38, .6);
+}
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
