@@ -1,0 +1,410 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 35px 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7f4df 0%,
+            #ffffff 45%,
+            #e8f3df 100%
+        );
+
+    color: #123d2a;
+
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   DECORAÇÕES DE FUNDO
+========================= */
+
+body::before {
+    content: "🐆";
+
+    position: fixed;
+
+    right: -25px;
+    bottom: -25px;
+
+    font-size: 150px;
+
+    opacity: 0.08;
+
+    transform: rotate(-10deg);
+
+    pointer-events: none;
+}
+
+body::after {
+    content: "🌿";
+
+    position: fixed;
+
+    left: -20px;
+    top: 20px;
+
+    font-size: 120px;
+
+    opacity: 0.08;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+body > .grade::before {
+    content: "🇧🇷  ELEIÇÃO REPUBLICANA  🇧🇷";
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    font-size: clamp(25px, 4vw, 42px);
+
+    font-weight: 900;
+
+    color: #075b36;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+
+    text-shadow:
+        2px 2px 0 #f4c400;
+}
+
+body > .grade::after {
+    content: "Escolha seu candidato";
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    font-size: 17px;
+
+    color: #174d83;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   GRADE
+========================= */
+
+.grade {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    position: relative;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border: 3px solid #07883f;
+
+    box-shadow:
+        0 8px 20px rgba(0, 70, 35, 0.15);
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+
+/* Faixa verde/amarela */
+
+.card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 8px;
+
+    background: linear-gradient(
+        90deg,
+        #07883f,
+        #f4c400,
+        #0757a0
+    );
+}
+
+
+/* Decoração de onça */
+
+.card::after {
+    content: "🐆";
+
+    position: absolute;
+
+    right: -10px;
+    top: -5px;
+
+    font-size: 55px;
+
+    opacity: 0.10;
+
+    transform: rotate(10deg);
+}
+
+
+/* =========================
+   EFEITO CARD
+========================= */
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: #f0b900;
+
+    box-shadow:
+        0 15px 30px rgba(0, 80, 40, 0.25);
+}
+
+
+/* =========================
+   NOME DO CANDIDATO
+========================= */
+
+.card h2 {
+    position: relative;
+
+    margin-top: 8px;
+    margin-bottom: 12px;
+
+    color: #0757a0;
+
+    font-size: 23px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   LINHA DECORATIVA
+========================= */
+
+.card h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 4px;
+
+    margin: 8px auto 0;
+
+    border-radius: 10px;
+
+    background: #f4c400;
+}
+
+
+/* =========================
+   TEXTO DOS VOTOS
+========================= */
+
+.card p {
+    margin: 15px 0;
+
+    color: #555;
+
+    font-size: 16px;
+}
+
+.card span {
+    display: inline-block;
+
+    min-width: 42px;
+
+    padding: 5px 12px;
+
+    margin-left: 5px;
+
+    background: #0757a0;
+
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    border: 3px solid #f4c400;
+}
+
+
+/* =========================
+   IMAGENS
+========================= */
+
+.card img {
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+
+    display: block;
+
+    cursor: pointer;
+
+    border-radius: 12px;
+
+    border: 4px solid #07883f;
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.20);
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================
+   HOVER DA IMAGEM
+========================= */
+
+.card img:hover {
+    transform: scale(1.03);
+
+    border-color: #f4c400;
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================
+   CLIQUE
+========================= */
+
+.card img:active {
+    transform: scale(0.96);
+
+    border-color: #0757a0;
+}
+
+
+/* =========================
+   DESTAQUE NAS CORES
+========================= */
+
+/* Primeiro card */
+
+.card:nth-child(2) {
+    border-color: #07883f;
+}
+
+/* Segundo card */
+
+.card:nth-child(3) {
+    border-color: #f0bd00;
+}
+
+/* Terceiro card */
+
+.card:nth-child(4) {
+    border-color: #0757a0;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+
+    .grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card img {
+        height: 250px;
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 12px;
+    }
+
+    body > .grade::before {
+        font-size: 25px;
+    }
+
+    body > .grade::after {
+        font-size: 15px;
+    }
+
+    .grade {
+        grid-template-columns: 1fr;
+
+        max-width: 400px;
+
+        gap: 20px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .card h2 {
+        font-size: 21px;
+    }
+
+    .card img {
+        height: 300px;
+    }
+}
