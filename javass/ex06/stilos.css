@@ -1,0 +1,29 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+h1{
+    color: blue;
+    font-size: 24px;
+    font-family: Verdana;
+    text-align: center;
+    padding-top: 90px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 0; 
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px;
+}
