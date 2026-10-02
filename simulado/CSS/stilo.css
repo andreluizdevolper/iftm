@@ -1,0 +1,32 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.caixa{
+    border: 3px solid green;
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    color: green;
+}
+
+.entrar {
+    background-color: green;
+    color: white;
+    width: 180px;
+    height: 30px;
+    margin: 10px auto;
+    margin: auto;
+
+}
+
+.caixatexto{
+    border: none;
+    border-bottom: 1px solid green;
+    width: 60%;
+    outline: none;
+}

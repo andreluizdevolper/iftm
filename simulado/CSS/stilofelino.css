@@ -1,0 +1,48 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.gatos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.retratos {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 130px;
+}
+
+.retratos img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+.retratos p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.retratos button {
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+.retratos input {
+    width: 80px;
+    text-align: center;
+}
