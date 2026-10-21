@@ -1,0 +1,716 @@
+
+:root {
+    --azul: #14263a;
+    --ambar: #f2a900;
+    --texto: #1b2733;
+    --fundo: #ffffff;
+    --faixa: #eef1f4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-width: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+    background: var(--azul);
+}
+
+/* Faixa de aviso */
+.aviso {
+    background: var(--azul);
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+.aviso strong {
+    color: var(--ambar);
+}
+
+/* Cabeçalho */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background: var(--fundo);
+    border-bottom: 4px solid var(--ambar);
+}
+
+.header__in {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0.9rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Logo do cabeçalho */
+.header .logo {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+
+.header .logo span {
+    color: var(--ambar);
+}
+
+/* Menu do cabeçalho */
+.header nav {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    list-style: none;
+}
+
+.menu a {
+    display: inline-block;
+    color: var(--texto);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.35rem 0;
+    border-bottom: 2px solid transparent;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+    border-bottom-color: var(--ambar);
+}
+
+.menu .cta {
+    background: var(--ambar);
+    color: var(--azul);
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    border-bottom: 0;
+    font-weight: 800;
+}
+
+.menu .cta:hover,
+.menu .cta:focus-visible {
+    background: var(--azul);
+    color: #ffffff;
+}
+
+/* Botão do menu no celular */
+.burger {
+    display: none;
+    flex-shrink: 0;
+    background: none;
+    border: 2px solid var(--azul);
+    border-radius: 6px;
+    padding: 0.45rem 0.6rem;
+    cursor: pointer;
+}
+
+.burger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--azul);
+    margin: 4px 0;
+}
+
+/* Área principal com imagem do rio */
+.principal {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    color: #ffffff;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.70),
+            rgba(0, 0, 0, 0.18)
+        ),
+        url("img/Rio_Preto_-_Unaí_5.jpg") center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho alternativo, caso seja usado no HTML */
+.cabecalho {
+    width: 100%;
+    padding: 28px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cabecalho .logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cabecalho .logo span {
+    color: #e9a94b;
+}
+
+.cabecalho nav {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.cabecalho nav a:hover {
+    color: #e9a94b;
+}
+
+/* Conteúdo principal */
+.conteudo {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 55px 9%;
+}
+
+.anuncio {
+    width: 100%;
+    max-width: 520px;
+    min-width: 0;
+}
+
+.destaque {
+    color: #e9a94b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.anuncio h1 {
+    font-size: clamp(40px, 4.5vw, 66px);
+    line-height: 1.08;
+    margin: 22px 0;
+}
+
+.anuncio h1 span {
+    color: #e9a94b;
+}
+
+.anuncio p {
+    max-width: 420px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #eeeeee;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background: #e9a94b;
+    color: #171717;
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #ffc66c;
+    transform: translateY(-3px);
+}
+
+/* Carrossel */
+.carrossel {
+    width: 100%;
+    max-width: 410px;
+    min-width: 0;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.97);
+    color: #222222;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+.carrossel-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.carrossel-topo h2 {
+    font-size: 19px;
+}
+
+.carrossel-topo span {
+    color: #a16b24;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.foto-container {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #eeeeee;
+}
+
+.foto-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.25s;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.informacoes h3 {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.informacoes p {
+    color: #777777;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.controles {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.controles button {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: #242424;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.controles button:hover {
+    background: #b77b2d;
+}
+
+.indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 18px;
+}
+
+.indicadores span {
+    width: 8px;
+    height: 8px;
+    background: #cccccc;
+    border-radius: 50%;
+}
+
+.indicadores span.ativo {
+    width: 22px;
+    background: #b77b2d;
+    border-radius: 10px;
+}
+
+/* Rodapé */
+.footer {
+    width: 100%;
+    background: var(--azul);
+    color: #ffffff;
+    padding: 18px 5% 10px;
+}
+
+.footer__conteudo {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding-bottom: 14px;
+}
+
+.footer__marca {
+    min-width: 0;
+}
+
+.footer__marca h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.footer__marca h2 span {
+    color: var(--ambar);
+}
+
+.footer__marca p {
+    color: #d5dce4;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.footer__contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+}
+
+.footer__contato h3 {
+    display: none;
+}
+
+.footer__contato a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.footer__contato a span {
+    display: inline-block;
+    width: 22px;
+    color: var(--ambar);
+    font-size: 16px;
+}
+
+.footer__contato a:hover {
+    color: var(--ambar);
+}
+
+.footer__final {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    padding: 10px 0 0;
+    color: #cbd3dc;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+/* Telas médias */
+@media (max-width: 1000px) and (min-width: 761px) {
+    .conteudo {
+        gap: 35px;
+        padding: 45px 5%;
+    }
+
+    .anuncio h1 {
+        font-size: clamp(38px, 4.5vw, 52px);
+    }
+
+    .carrossel {
+        max-width: 380px;
+    }
+
+    .foto-container {
+        height: 220px;
+    }
+
+    .menu {
+        gap: 1rem;
+    }
+}
+
+/* Celulares e tablets estreitos */
+@media (max-width: 760px) {
+    .header__in {
+        padding: 12px 16px;
+    }
+
+    .header .logo {
+        font-size: 21px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .header nav {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--fundo);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 8px 20px 18px;
+        border-bottom: 4px solid var(--ambar);
+    }
+
+    .menu.aberto {
+        display: flex;
+    }
+
+    .menu li {
+        border-bottom: 1px solid var(--faixa);
+    }
+
+    .menu a {
+        display: block;
+        padding: 12px 0;
+    }
+
+    .menu li:last-child {
+        border: 0;
+        padding-top: 10px;
+    }
+
+    .menu .cta {
+        text-align: center;
+    }
+
+    .principal {
+        min-height: 100vh;
+        background-position: center;
+    }
+
+    .cabecalho {
+        flex-direction: row;
+        padding: 20px 5%;
+        flex-wrap: wrap;
+    }
+
+    .cabecalho nav {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .conteudo {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 28px;
+        padding: 32px 18px;
+    }
+
+    .anuncio {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .anuncio h1 {
+        font-size: clamp(34px, 8vw, 48px);
+        line-height: 1.1;
+    }
+
+    .anuncio p {
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 24px;
+    }
+
+    .botao {
+        padding: 14px 20px;
+        max-width: 100%;
+    }
+
+    .carrossel {
+        width: 100%;
+        max-width: 500px;
+        align-self: center;
+        padding: 15px;
+    }
+
+    .foto-container {
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .informacoes {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .informacoes > div:first-child {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .controles button {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Rodapé centralizado no celular */
+    .footer {
+        padding: 22px 18px 12px;
+    }
+
+    .footer__conteudo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    .footer__marca {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer__marca h2 {
+        font-size: 22px;
+    }
+
+    .footer__marca p {
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .footer__contato {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 14px 18px;
+    }
+
+    .footer__contato a {
+        font-size: 13px;
+    }
+
+    .footer__final {
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 380px) {
+    .header__in {
+        padding: 10px 12px;
+    }
+
+    .header .logo {
+        font-size: 18px;
+    }
+
+    .conteudo {
+        padding: 28px 12px;
+        gap: 24px;
+    }
+
+    .anuncio h1 {
+        font-size: 34px;
+    }
+
+    .carrossel {
+        padding: 12px;
+    }
+
+    .carrossel-topo h2 {
+        font-size: 17px;
+    }
+
+    .informacoes h3 {
+        font-size: 14px;
+    }
+
+    .informacoes p {
+        font-size: 12px;
+    }
+
+    .footer__contato {
+        gap: 12px;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .burger {
+        display: none;
+    }
+
+    .header__in {
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        padding: 0;
+        border: none;
+        background: transparent;
+    }
+
+    .menu li {
+        display: none;
+        border: none;
+    }
+
+    .menu li:last-child {
+        display: block;
+        padding: 0;
+    }
+
+    .menu .cta {
+        display: inline-block;
+        padding: 10px 12px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+}
