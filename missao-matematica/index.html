@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101b3f">
+<title>Missão Matemática — Desafio Espacial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="app">
+ <div class="top"><div class="brand">🚀 MISSÃO <span>MATEMÁTICA</span></div><div class="planet">🪐</div></div>
+ <section class="card intro" id="start">
+  <div class="hero">👩‍🚀🌌</div>
+  <h1>Prepare-se para o <em>desafio!</em></h1>
+  <p>Resolva as operações, ganhe pontos e avance pelo espaço. Você tem 10 perguntas para mostrar que manda bem na matemática!</p>
+  <p><strong>Escolha sua missão:</strong></p>
+  <div class="levels">
+   <button class="level active" data-level="easy">🛰️ Explorador <small>Fácil · 10–11 anos</small></button>
+   <button class="level" data-level="medium">🌙 Astronauta <small>Médio · 12–13 anos</small></button>
+   <button class="level" data-level="hard">🛸 Comandante <small>Difícil · 14–15 anos</small></button>
+  </div>
+  <button class="primary" id="begin">INICIAR MISSÃO 🚀</button>
+ </section>
+ <section class="card hidden" id="game">
+  <div class="stats">
+   <div class="stat"><b id="score">0</b><span>⭐ PONTOS</span></div>
+   <div class="stat"><b id="questionNo">1/10</b><span>🧩 PERGUNTA</span></div>
+   <div class="stat"><b id="streak">0</b><span>🔥 SEQUÊNCIA</span></div>
+  </div>
+  <div class="progress"><div class="bar" id="bar"></div></div>
+  <div class="question-label" id="topic">Cálculo espacial</div>
+  <div class="question" id="question">12 + 8 = ?</div>
+  <div class="answers" id="answers"></div>
+  <div class="feedback" id="feedback" aria-live="polite"></div>
+  <button class="primary next hidden" id="next">PRÓXIMA PERGUNTA ➜</button>
+ </section>
+ <section class="card result hidden" id="result">
+  <div class="medal" id="medal">🏆</div><h2 id="resultTitle">Missão concluída!</h2>
+  <div class="score" id="finalScore">0 pontos</div>
+  <p id="resultText"></p>
+  <button class="primary" id="again">JOGAR NOVAMENTE 🔁</button>
+ </section>
+ <div class="foot">MISSÃO MATEMÁTICA · Aprender também pode ser uma aventura!</div>
+</main>
+    <script src="js/script.js"></script>
+</body>
+</html>
