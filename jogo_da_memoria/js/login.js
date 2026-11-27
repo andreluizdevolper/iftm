@@ -1,8 +1,13 @@
 const btnEntrar = document.getElementById("btnEntrar");
 
 btnEntrar.addEventListener("click", function() {
-  const nomeUser = document.getElementById("nomeUser").value;
-  const senhaUser = document.getElementById("senha").value;
+  const nomeUser = document.getElementById("nomeUser").value.trim();
+  const senhaUser = document.getElementById("senha").value.trim();
+
+  if (nomeUser === "" || senhaUser === "") {
+        alert("Por favor, preencha o usuário e a senha!");
+        return; 
+    }
   const dadosalvos = JSON.parse(localStorage.getItem("usuarioSalvo"));
 
   if (!dadosalvos) {

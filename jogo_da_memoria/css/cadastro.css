@@ -9,8 +9,18 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
 }
+body {
+  
+  background-image: url('../img/fazenda.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+}
+
 .login{
     text-align: center;
     width: fit-content;
@@ -32,11 +42,11 @@ body{
 }
 form{
     width: 300px;
-    height: 100px;
+    height: 200px;
     
 }
 
-#cadUser, #cadsenha #confsenha{
+#cadUser, #cadsenha, #cadconfsenha {
     width: 100%;
     padding: 6px 2px;
     border: none;
@@ -45,11 +55,9 @@ form{
     background: transparent;
 }
 
-
-#cadUser:focus, #cadsenha:focus {
+#cadUser:focus, #cadsenha:focus, #cadconfsenha:focus {
     border-bottom-color: #4caf50;
 }
-
 #link:visited, :hover{
     color: black;
 
