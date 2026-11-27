@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.formBotoes{
+    
+    display: flex;
+    justify-content: right;
+    background-color: black;
+    padding: 10px;  
+
+}
+
+.formBotoes input[type="button"]{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    outline: rgb(255, 240, 235) solid 2px;
+    outline-offset: 2px;
+    margin-left: 10px;
+    transition: all 0.1s;
+}
+.formBotoes input[type="button"]:hover{
+    background-color: rgb(169, 132, 37);
+    color: black;
+    cursor: pointer;
+}
+
+.formBotoes input[type="button"]:active{
+    transform: scale(0.9);
+}
+
+.boxNumeroAleatorio{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.boxNumeroAleatorio p{
+    font-size: 250px;   
+}
