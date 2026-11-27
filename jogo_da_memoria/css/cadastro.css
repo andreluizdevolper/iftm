@@ -1,0 +1,59 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+.login{
+    text-align: center;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 15px;
+    border
+    height: 300px;
+    width: 350px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+#btnCadastrar{
+    height: 30px;
+    width: 190px;
+    background-color: darkcyan;
+    color: white;
+    font-size: 18px;
+    border-radius: 15px;
+}
+form{
+    width: 300px;
+    height: 100px;
+    
+}
+
+#cadUser, #cadsenha #confsenha{
+    width: 100%;
+    padding: 6px 2px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    outline: none;
+    background: transparent;
+}
+
+
+#cadUser:focus, #cadsenha:focus {
+    border-bottom-color: #4caf50;
+}
+
+#link:visited, :hover{
+    color: black;
+
+}
+#link{
+    text-decoration: none;
+}
